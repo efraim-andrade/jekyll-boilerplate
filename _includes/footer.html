@@ -1,0 +1,16 @@
+<footer class="footer">
+    <p class="copyright">© 2018 {{ site.title }} - Todos os direitos reservados</p>
+
+    <a class="link" href="http://www.iclouds.com.br/">
+        <img
+            class="icon"
+            {% if page.path == 'index.md' %}
+                src="./assets/icons/iclouds.svg"
+            {% else %}
+                src="./../assets/icons/iclouds.svg"
+            {% endif %}
+            alt="Enviar mensagem"
+            title="Enviar mensagem"
+        />            
+    </a>
+</footer>

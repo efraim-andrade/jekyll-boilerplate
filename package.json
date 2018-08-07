@@ -1,0 +1,29 @@
+{
+    "name": "espaco-mais",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "iClouds Sistemas Web",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.24.4",
+        "child-process": "^1.0.2",
+        "cp": "^0.2.0",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssmin": "^0.2.0",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.0",
+        "gulp-sass": "^4.0.1",
+        "gulp-uglify": "^3.0.0",
+        "gulp-babel": "^7.0.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.1"
+    },
+    "dependencies": {}
+}

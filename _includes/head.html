@@ -1,0 +1,54 @@
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="theme-color" content="{{ site.data.variables.primary }}">
+      <meta name="msapplication-navbutton-color" content="{{ site.data.variables.primary }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    {% if page.path == 'index.md' %}
+      {% for keyword in site.keywords %}
+        <meta name="keywords" content="{{ keyword }}">
+      {% endfor %}
+    {% else %}
+      {% for keyword in page.keywords %}
+        <meta name="keywords" content="{{ keyword }}">
+      {% endfor %}
+    {% endif %}
+  
+    {% if page.path == 'index.md' %}
+      <meta name="description" content="{{ site.description }}">
+    {% else %}
+      <meta name="description" content="{{ page.description }}">
+    {% endif %}
+  
+    {% if page.path == 'index.md' %}
+      <meta name="author" content="iClouds Sistemas Web">
+    {% else %}
+      <meta name="author" content="{{ page.author }}">
+    {% endif %}
+  
+    <meta name="copyright" content="{{ site.title }}">
+  
+    <meta name="reply-to" content="{{ site.atendimento-email }}">
+  
+    {% if page.path == 'index.md' %}
+      <link rel="shortcut icon" type="image/png" href="./assets/icons/favicon.ico"/>
+    {% else %}
+      <link rel="shortcut icon" type="image/png" href="./../assets/icons/favicon.ico"/>
+    {% endif %}
+  
+    {%- seo -%}
+    
+    <link rel="stylesheet" href="{{ "/assets/css/libs/owlCarousel/owl.carousel.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/owlCarousel/owl.theme.default.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/animate/animate.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    
+    {%- feed_meta -%}
+    
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+  </head>

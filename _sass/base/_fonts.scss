@@ -1,0 +1,23 @@
+@mixin font-face($folder, $file) {
+    $name: $file;
+    $path: './fonts/' + $folder + '/' + $file;
+
+    @font-face {
+        font-family: $name;
+
+        src: url($path + '.eot') format('embedded-opentype'),
+             url($path + '.woff') format('woff'),
+             url($path + '.ttf')  format('truetype'),
+             url($path + '.svg') format('svg');
+             
+             font-weight: normal;
+             font-style: normal;
+    };
+};
+
+
+// PRIMEIRO O NOME DA PASTA DEPOIS O NOME DO ARQUIVO
+// @include font-face(SanFrancisco, SF-Thin);
+// @include font-face(SanFrancisco, SF-Regular);
+// @include font-face(SanFrancisco, SF-Medium);
+// @include font-face(SanFrancisco, SF-Heavy);
