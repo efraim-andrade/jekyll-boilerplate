@@ -21,9 +21,4 @@ permalink: /:title/
 baseurl: ""
 url: "http://localhost:3000/" # Colocar o dominio online
 
-# ICLOUDS SERVER
-# baseurl: "/espacomais" # dominio iclouds
-# url: "http://servidor.iclouds.com.br/espacomais" # Colocar o dominio iclouds
-# atendimento-email: "suporte@iclouds.com.br" #Testes com envio de email
-
 
